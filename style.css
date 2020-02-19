@@ -6,6 +6,15 @@ body, ul {
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .center {
     margin: auto;
     max-width: 1000px;
@@ -48,6 +57,31 @@ body, ul {
 }
 
 
+#header-menu ul {
+    justify-content: space-between;
+    
+}
+
+#header-menu ul li a {
+    border-right: 1px solid #fff;
+    padding: 0 20px;
+}
+
+#header-menu ul li:first-child a {
+    padding-left: 0;
+}
+
+#header-menu ul li:last-child a {
+        padding-right: 0;
+        border: none;
+}
+
+
+#header-menu {
+    background: #4ccfc1;
+    padding: 10px 15px;
+}
+
 
 
 
@@ -63,6 +97,17 @@ body, ul {
      
 }
 
+@media (max-width: 940px) {
+    #header-menu ul li a {
+        border: none;
+    }
+    #header-menu {
+        justify-content: center;
+    }
+}
+
+
+
 @media (max-width: 670px) {
        #header-top {
            flex-direction: column;
@@ -70,4 +115,18 @@ body, ul {
        #search {
            margin: 15px 0;
        }
+}
+
+
+@media (max-width: 530px) {
+    
+    #header-menu ul li {
+        width: 100%;
+        text-align: center;
+        
+    }
+    #header-menu ul li a {
+        padding: 5px 15px !important;
+        display: block;
+    }
 }
