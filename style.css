@@ -195,11 +195,27 @@ a {
 
 #footer-top {
     justify-content: space-between;
+    padding: 35px 0 20px 0;
 }
 
+#footer-top h2 {
+    margin-top: 0;
+    color: #fff;
+}
 
+#footer-top a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+    display: block;
 
-
+}
+#footer-bottom {
+    background: #2da89b;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
 
 
 
@@ -248,11 +264,15 @@ a {
 
 
 @media (max-width: 530px) {
-    
+    #footer-top .nav {
+        margin: 15px;
+    }
+    #footer-top {
+        justify-content: center;
+    }
     #header-menu ul li {
         width: 100%;
         text-align: center;
-        
     }
     #header-menu ul li a {
         padding: 5px 15px !important;
